@@ -1,12 +1,9 @@
-import type { Route } from "./+types/home";
-import { Link } from "react-router";
-import { Button } from "@/components/ui/button";
+import type { Route } from './+types/home';
+import { Link } from 'react-router';
+import { Button } from '@/components/ui/button';
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Home" },
-    { name: "description", content: "Home" },
-  ];
+  return [{ title: 'Home' }, { name: 'description', content: 'Home' }];
 }
 
 export default function Home() {
