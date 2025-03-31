@@ -15,14 +15,14 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">ログイン</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              Email
+              メールアドレス
             </label>
             <Input
               id="email"
@@ -38,7 +38,7 @@ const LoginPage = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Password
+              パスワード
             </label>
             <Input
               id="password"
@@ -50,9 +50,15 @@ const LoginPage = () => {
             />
           </div>
           <Button type="submit" className="w-full">
-            Login
+            ログイン
           </Button>
         </form>
+        <p className="text-center text-sm mt-4">
+          アカウントをお持ちでないですか？{' '}
+          <a href="/account/signup" className="text-blue-500">
+            新規登録はこちら
+          </a>
+        </p>
       </div>
     </div>
   );
